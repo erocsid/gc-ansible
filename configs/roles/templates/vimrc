@@ -1,0 +1,16 @@
+" basic settings
+set ruler
+set incsearch
+set smartcase
+set tabstop=4
+set expandtab
+set wildmode=list
+
+set hlsearch
+nmap <Del> /blahblahblahrandomsearchstring<CR>
+
+nmap <Space> <C-d>
+
+" colors
+set background=dark
+syntax on
