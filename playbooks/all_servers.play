@@ -1,0 +1,8 @@
+---
+- hosts: all
+  sudo: yes
+
+  roles:
+    # install epel using third party module
+    - { role: sfromm.epel }
+    - setup_rcfiles

@@ -12,3 +12,5 @@ if [ -f /etc/bashrc ]; then
 fi
 
 alias l='ls -la'
+
+export PS1="\u@\h \w$ "

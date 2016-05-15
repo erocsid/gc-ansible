@@ -3,4 +3,4 @@ ansible.chalkdust.org
 utility.chalkdust.org
 
 [web]
-web1.chalkdust.org
+haproxy1.chalkdust.org

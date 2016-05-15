@@ -1,0 +1,6 @@
+- name: haproxy installs
+  sudo: yes
+  hosts: web
+
+  roles:
+  - install_haproxy
