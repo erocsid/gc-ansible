@@ -1,6 +1,7 @@
 - name: nginx install
-  sudo: yes
   hosts: web
+  become: yes
+  become_method: sudo
 
   roles:
   - install_nginx

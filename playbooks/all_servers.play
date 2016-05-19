@@ -1,8 +1,10 @@
 ---
 - hosts: all
-  sudo: yes
+  become: yes
+  become_method: sudo
 
   roles:
     # install epel using third party module
     - { role: sfromm.epel }
     - setup_rcfiles
+    - selinux_disable

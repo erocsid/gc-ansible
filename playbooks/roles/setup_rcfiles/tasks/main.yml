@@ -7,5 +7,3 @@
     template: src=../templates/bashrc dest=/root/.bashrc owner=root group=root mode=0644
   - name: setup bashrc - discore
     template: src=../templates/bashrc dest=/home/discore/.bashrc owner=discore group=discore mode=0644
-  - name: turn off selinux
-    template: src=../templates/selinux-config dest=/etc/selinux/config owner=root group=root mode=0644
