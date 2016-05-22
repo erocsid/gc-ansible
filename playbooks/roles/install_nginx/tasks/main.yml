@@ -1,6 +1,6 @@
 ---
 - name: install nginx
-  yum: name=nginx state=latest
+  yum: name=nginx state=installed
 
 - name: setup nginx default page
   template: src=../templates/index.html dest=/usr/share/nginx/html owner=root group=root mode=0644

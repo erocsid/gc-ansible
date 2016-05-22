@@ -1,6 +1,6 @@
 ---
 - name: install haproxy
-  yum: name=haproxy state=latest
+  yum: name=haproxy state=installed
 
 - name: setup haproxy config
   template: src=../templates/haproxy.cfg dest=/etc/haproxy/haproxy.cfg owner=root group=root mode=0644

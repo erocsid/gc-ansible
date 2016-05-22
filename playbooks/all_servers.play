@@ -1,5 +1,6 @@
 ---
 - hosts: all
+  name: do stuff common to all servers
   become: yes
   become_method: sudo
 
@@ -8,3 +9,4 @@
     - { role: sfromm.epel }
     - setup_rcfiles
     - selinux_disable
+    - install_rpms

@@ -6,4 +6,8 @@ utility.chalkdust.org
 haproxy1.chalkdust.org
 
 [web]
-web1.chalkdust.org
+#web1.chalkdust.org
+web2.chalkdust.org
+
+[fileserver]
+fileserver1.chalkdust.org

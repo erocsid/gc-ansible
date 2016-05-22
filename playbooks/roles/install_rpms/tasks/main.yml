@@ -1,0 +1,17 @@
+---
+- name: install common packages
+  yum: name={{item}} state=installed
+  with_items:
+    - htop
+    - nmap
+    - tcpdump
+    - lynx
+    - vim
+    - rsync
+    - openssh-clients
+    - tmux
+    - screen
+    - bind-utils
+    - curl
+    - wget
+    - nfs-utils

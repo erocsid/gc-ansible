@@ -1,0 +1,8 @@
+---
+- hosts: fileserver
+  name: setup NFS server for mounting on other clients
+  become: yes
+  become_method: sudo
+
+  roles:
+  - install_nfs_server
