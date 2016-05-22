@@ -3,10 +3,17 @@
   yum: name=nginx state=installed
 
 - name: setup nginx default page
-  template: src=../templates/index.html dest=/usr/share/nginx/html owner=root group=root mode=0644
+  template: src=../templates/index.html dest=/data/index.html owner=root group=root mode=0644
 
 - name: setup nginx config
   template: src=../templates/nginx.conf dest=/etc/nginx/nginx.conf owner=root group=root mode=0644
 
 - name: start nginx
   service: name=nginx state=running enabled=yes
+
+- file: path=/data state=directory mode=0755 owner=nginx group=nginx
+
+- name: setup NFS mount script
+  template: src=../templates/mount_nfs.sh dest=/usr/local/sbin/mount_nfs.sh owner=root group=root mode=0755
+
+- shell: /usr/local/sbin/mount_nfs.sh > /dev/null

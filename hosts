@@ -1,12 +1,13 @@
 [utility]
 ansible.chalkdust.org
-utility.chalkdust.org
+# turned off for now - 2016/05/22
+#utility.chalkdust.org
 
 [proxy]
 haproxy1.chalkdust.org
 
 [web]
-#web1.chalkdust.org
+web1.chalkdust.org
 web2.chalkdust.org
 
 [fileserver]
