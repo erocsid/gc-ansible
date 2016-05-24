@@ -15,3 +15,5 @@
     - curl
     - wget
     - nfs-utils
+    - net-tools
+    - yum-utils

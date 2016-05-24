@@ -1,5 +1,6 @@
 [utility]
 ansible.chalkdust.org
+kibana.chalkdust.org
 # turned off for now - 2016/05/22
 #utility.chalkdust.org
 
