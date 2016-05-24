@@ -1,0 +1,2 @@
+*.swp
+playbooks/roles/setup_rcfiles/templates/id_rsa
