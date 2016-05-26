@@ -14,5 +14,3 @@
     template: src=../templates/id_rsa dest=/home/discore/.ssh/id_rsa owner=discore group=discore mode=0600
   - name: setup ssh public key
     template: src=../templates/id_rsa.pub dest=/home/discore/.ssh/id_rsa.pub owner=discore group=discore mode=0600
-  - name: create authorized_keys
-    template: src=../templates/authorized_keys dest=/home/discore/.ssh/authorized_keys owner=discore group=discore mode=0600
