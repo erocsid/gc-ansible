@@ -16,4 +16,5 @@
 - name: setup NFS mount script
   template: src=../templates/mount_nfs.sh dest=/usr/local/sbin/mount_nfs.sh owner=root group=root mode=0755
 
-- shell: /usr/local/sbin/mount_nfs.sh > /dev/null
+- name: making sure /data is mounted
+  shell: /usr/local/sbin/mount_nfs.sh > /dev/null
