@@ -1,6 +1,8 @@
 [utility]
 ansible.chalkdust.org
-kibana.chalkdust.org
+#kibana.chalkdust.org
+#monitor1m.chalkdust.org
+#monitor1s.chalkdust.org
 # turned off for now - 2016/05/22
 #utility.chalkdust.org
 
