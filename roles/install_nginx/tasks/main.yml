@@ -5,9 +5,6 @@
 - name: chalkdust.org - setup nginx default page
   template: src=../templates/index.html dest=/data/chalkdust.org/index.html owner=root group=root mode=0644
 
-- name: enchat.org
-  template: src=../templates/enchat.org-index.html dest=/data/enchat.org/index.html owner=root group=root mode=0644
-
 - name: setup nginx config
   template: src=../templates/nginx.conf dest=/etc/nginx/nginx.conf owner=root group=root mode=0644
 

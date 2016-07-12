@@ -17,3 +17,4 @@
     - nfs-utils
     - net-tools
     - yum-utils
+    - telnet
