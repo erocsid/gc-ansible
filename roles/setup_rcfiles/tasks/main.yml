@@ -10,7 +10,3 @@
     template: src=../templates/bashrc dest=/home/discore/.bashrc owner=discore group=discore mode=0644
 
   - file: path=/home/discore/.ssh state=directory mode=0700 owner=discore group=discore
-  - name: setup ssh private key
-    template: src=../templates/id_rsa dest=/home/discore/.ssh/id_rsa owner=discore group=discore mode=0600
-  - name: setup ssh public key
-    template: src=../templates/id_rsa.pub dest=/home/discore/.ssh/id_rsa.pub owner=discore group=discore mode=0600

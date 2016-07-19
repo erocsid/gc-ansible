@@ -1,5 +1,6 @@
 [utility]
 ansible-int.chalkdust.org
+repo.chalkdust.org
 
 [proxy]
 haproxy1-int.chalkdust.org
