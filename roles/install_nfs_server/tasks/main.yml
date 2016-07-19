@@ -2,10 +2,12 @@
 - name: install nfs server
   yum: name={{item}} state=installed
   with_items:
+    - nfs-utils
     - lvm2
 
 - name: setup exports
   template: src=../templates/exports dest=/etc/exports owner=root group=root mode=0644
 
-# this executes everytime the playbook is ran and counts as a "changed" thing -- annoying
-#- shell: exportfs -a
+- shell: systemctl enable nfs-server.service
+- shell: systemctl restart nfs-server.service
+- shell: exportfs -a

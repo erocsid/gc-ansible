@@ -6,7 +6,7 @@ if grep nfs /etc/fstab > /dev/null; then
     exit 0;
 fi
 
-echo "10.240.0.7:/data /data nfs defaults 0 0" >> /etc/fstab
+echo "fileserver1:/data /data nfs defaults 0 0" >> /etc/fstab
 echo "NFS mount added to fstab"
 
 mount -a
