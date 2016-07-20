@@ -1,0 +1,11 @@
+---
+- name: run all playbooks
+  hosts: all
+  become: yes
+  become_method: sudo
+
+  tasks:
+    - include: site.yml
+    - include: fileservers.yml
+    - include: haproxy.yml
+    - include: nginx.yml

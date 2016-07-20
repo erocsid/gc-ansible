@@ -10,3 +10,4 @@
     template: src=../templates/bashrc dest=/home/discore/.bashrc owner=discore group=discore mode=0644
 
   - file: path=/home/discore/.ssh state=directory mode=0700 owner=discore group=discore
+  - file: path=/root/.ssh state=directory mode=0700 owner=root group=root

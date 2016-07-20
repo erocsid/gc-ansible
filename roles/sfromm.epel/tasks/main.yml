@@ -1,5 +1,4 @@
 ---
-# tasks file for epel
 - name: create EPEL yum repository
   template: src=epel.repo.j2 dest={{ yum_repos_d }}/epel.repo
 

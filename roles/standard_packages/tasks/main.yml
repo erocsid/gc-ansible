@@ -18,3 +18,4 @@
     - net-tools
     - yum-utils
     - telnet
+    - lvm2

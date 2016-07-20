@@ -7,6 +7,6 @@
   roles:
     # install epel using third party module
     - { role: sfromm.epel }
-    - setup_rcfiles
+    - user_rcfiles
     - selinux_disable
-    - install_rpms
+    - standard_packages

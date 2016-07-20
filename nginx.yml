@@ -4,4 +4,4 @@
   become_method: sudo
 
   roles:
-  - install_nginx
+  - nginx
