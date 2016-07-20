@@ -6,6 +6,6 @@
 
   tasks:
     - include: site.yml
-    - include: fileservers.yml
+    - include: fileserver.yml
     - include: haproxy.yml
     - include: nginx.yml
