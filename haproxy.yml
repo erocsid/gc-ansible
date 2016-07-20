@@ -1,4 +1,3 @@
----
 - hosts: proxy
   name: setup haproxy servers
   become: yes

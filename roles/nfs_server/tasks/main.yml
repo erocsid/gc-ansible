@@ -1,9 +1,3 @@
----
-- name: install nfs server
-  yum: name={{item}} state=installed
-  with_items:
-    - nfs-utils
-
 - name: setup exports
   template: src=../templates/exports dest=/etc/exports owner=root group=root mode=0644
 

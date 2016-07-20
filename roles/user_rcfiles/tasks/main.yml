@@ -1,13 +1,12 @@
----
-  - name: setup vimrc - root
-    template: src=../templates/vimrc dest=/root/.vimrc owner=root group=root mode=0644
-  - name: setup vimrc - discore
-    template: src=../templates/vimrc dest=/home/discore/.vimrc owner=discore group=discore mode=0644
+- name: setup vimrc - root
+  template: src=../templates/vimrc dest=/root/.vimrc owner=root group=root mode=0644
+- name: setup vimrc - discore
+  template: src=../templates/vimrc dest=/home/discore/.vimrc owner=discore group=discore mode=0644
 
-  - name: setup bashrc - root
-    template: src=../templates/bashrc-root dest=/root/.bashrc owner=root group=root mode=0644
-  - name: setup bashrc - discore
-    template: src=../templates/bashrc dest=/home/discore/.bashrc owner=discore group=discore mode=0644
+- name: setup bashrc - root
+  template: src=../templates/bashrc-root dest=/root/.bashrc owner=root group=root mode=0644
+- name: setup bashrc - discore
+  template: src=../templates/bashrc dest=/home/discore/.bashrc owner=discore group=discore mode=0644
 
-  - file: path=/home/discore/.ssh state=directory mode=0700 owner=discore group=discore
-  - file: path=/root/.ssh state=directory mode=0700 owner=root group=root
+- file: path=/home/discore/.ssh state=directory mode=0700 owner=discore group=discore
+- file: path=/root/.ssh state=directory mode=0700 owner=root group=root

@@ -1,4 +1,3 @@
----
 - hosts: fileserver
   name: setup NFS server for mounting on other clients
   become: yes
