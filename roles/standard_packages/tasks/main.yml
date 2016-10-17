@@ -18,3 +18,5 @@
     - yum-utils
     - telnet
     - lvm2
+    - zip
+    - unzip
