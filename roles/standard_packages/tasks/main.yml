@@ -20,3 +20,6 @@
     - lvm2
     - zip
     - unzip
+    - lsof
+    - iperf
+    - mtr
