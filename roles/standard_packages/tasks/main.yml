@@ -23,3 +23,6 @@
     - lsof
     - iperf
     - mtr
+    - nmap-ncat
+    - bzip2
+    - sysstat
