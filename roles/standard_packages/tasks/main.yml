@@ -26,3 +26,6 @@
     - nmap-ncat
     - bzip2
     - sysstat
+    - epel-release
+    - ncftp
+    - lftp
